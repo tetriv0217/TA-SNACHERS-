@@ -10,3 +10,10 @@ div.spell-wrap hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+div.spell-wrap div {
+  display: block;
+}
+
+.spellcheck-trigger:hover {
+  cursor: pointer;
+}
