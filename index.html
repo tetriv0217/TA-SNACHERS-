@@ -1,75 +1,338 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-<body>
-  <div class="container">
-    <input type="checkbox" id="flip">
-    <div class="cover">
-      <div class="front">
-        <div class="text">
-          <span class="text-1">WORDS ARE OUR MOST <br> INEXHAUSTIBLE SOURCE OF MAGIC </span>
-          <span class="text-2">Let's get started</span>
-        </div>
-      </div>
-      <div class="back">
-        <div class="text">
-          <span class="text-1">Complete miles of journey <br> with one step</span>
-          <span class="text-2">Let's get started</span>
-        </div>
-      </div>
-    </div>
-    <div class="forms">
-        <div class="form-content">
-          <div class="login-form">
-            <div class="title">Login</div>
-          <form action="#">
-            <div class="input-boxes">
-              <div class="input-box">
-                <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Enter your email" required>
-              </div>
-              <div class="input-box">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Enter your password" required>
-              </div>
-              <div class="text"><a href="#">Forgot password?</a></div>
-              <div class="button input-box">
-                <input type="submit" value="Submit">
-              </div>
-              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Spell checker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+        <!-- register button -->
+        <style>
+		.registerbtn {
+		background-color: #000000;
+		color: white;
+		padding: 16px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 20%;
+		opacity: 0.9;
+		border-radius: 24px;
+		font-size: 30px;
+	  }
+	  .registerbtn:hover {
+		opacity: 1;
+		background: rgb(0, 0, 0);
+		color: rgb(0, 0, 0);
+	  }
+	  
+	</style>
+	</head>
+
+	<body>		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<!-- <div class="top-menu"> -->
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center logo-wrap">
+						<div id="fh5co-logo">RETROGRADE WRITER</div>
+					</div>
+				</div>
+				
+			</div>
+		<!-- </div> -->
+	</nav>
+
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(https://t3.ftcdn.net/jpg/00/55/20/06/360_F_55200622_wGldkjxxP9JchAxCoSlBNUfjEn8OrrPd.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+							<h1>The Best Place to <em> Correct </em> your <em> Spellings </em>and
+								<em> Grammar</em> </h1>
+							<h2>Brought to you by TA SNATCHERS</h2>
+							<h2><b><button type="submit" class="registerbtn"><a href="screen2.html" target="_blank">Register</a></button></b></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+		
+	<!--KRITI'S SECTION: 1ST DOWN SLIDE-->
+	<div id="fh5co-about" class="fh5co-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-pull-4 img-wrap animate-box" >
+					<img src="https://2000thingswpf.files.wordpress.com/2013/11/943-001.png" alt="" width="600px" height="350px" >
+				</div>
+				<div class="col-md-5 col-md-push-1 animate-box">
+					<div class="section-heading">
+						<h2>The Retrograde Writer</h2>
+						<p>A website designed to locate misspelled words and notify the user of the misspellings. Depending on the spell checker, the feature may autocorrect the word or allow users to select from potential corrections on the misspelled word with a twist of Early Modern English words used in Shakespear's time. </p>
+						<p>The picture is an example of wavy (squiggly) red underlines and how spelling errors in Microsoft Word are displayed. When running a spell check on a document with red color underlines, Word gives suggestions for each misspelled word. The red wavy underline can be right-clicked to display corrections on the misspelled word.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<!-- APEKSHA: Done work on premium plans-->
+	<div id="fh5co-featured-menu" class="fh5co-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 fh5co-heading animate-box">
+					<h2>PLANS AVAILABLE</h2>
+					<div class="row">
+						<div class="col-md-6">
+							<p>Welcome to our website where we offer four unique plans to meet your specific needs. Our basic English plan is perfect for those who want to improve their language skills and communication abilities. Our student plan is designed for students who want to excel academically and need additional support in their studies. Our professional plan is ideal for individuals who want to enhance their career prospects by improving their communication and leadership skills. Finally, our premium plan offers the most comprehensive package with advanced features and exclusive benefits that cater to professionals at the highest level. Choose the plan that suits you best and embark on your journey of personal and professional growth with us.
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+					<div class="fh5co-item">
+						<img src="https://www.indiafilings.com/learn/wp-content/uploads/2019/12/GST-on-Free-of-Cost-Supplies.jpg" class="img-responsive" alt="">
+						<h3>Free Plan</h3>
+						<span class="fh5co-price">&#8377 0<sup>.00 per month</sup></span>
+						<p>==> This is a free grammar and spelling course where you can learn only 30 minutes a day.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+					<div class="fh5co-item margin_top">
+						<img src="https://img.freepik.com/free-vector/multi-ethnic-group-school-students-kids_3446-667.jpg" class="img-responsive" alt="">
+						<h3>Student Plan</h3>
+						<span class="fh5co-price">&#8377 199<sup>.00 per month</sup></span>
+						<p> ==>This is the student plan where a student studying in school and colleges can practice there vocabulary.<br>
+							==>They have access for 2 hrs a day.
+						</p>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+					<div class="fh5co-item">
+						<img src="https://www.shutterstock.com/image-illustration/business-woman-sitting-desk-flat-260nw-705432952.jpg" class="img-responsive" alt="">
+						<h3>Professional Plan</h3>
+						<span class="fh5co-price">&#8377 499<sup>.00 per month</sup></span>
+						<p>==> This is the Professional plan where the plan also gives some tips for preparation of job inerviews <br>
+						==>This plan allows the user to use it 3 hours a day.
+					  </p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+					<div class="fh5co-item margin_top">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdNhFXTdePmBhcNHWTThoroPYiTVhcuWZ7Txcl3sEbdyRBt8l62FCx70rNeWH3d1jBoUI&usqp=CAU" class="img-responsive" alt="">
+						<h3>Premium Plan</h3>
+						<span class="fh5co-price">&#8377 799<sup>.00 per month</sup></span>
+						<p>==>This is the ultimate plan which gives the user best interface to work on their grammar and spellings. <br>
+						==>It also provides with help and support to the user 24 X 7.
+						==>The user can use it anytime a day.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Abhishek-->
+	<div id="fh5co-featured-testimony" class="fh5co-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 fh5co-heading animate-box">
+					<h2>Testimony</h2>
+					<div class="row">
+						<div class="col-md-6">
+							<p style="font-size:20px">I have been using Retrograde Writer for a while now, and it has quickly become my go-to text editor. The combination of a futuristic theme with a retro vibe gives me the best of both worlds. The interface is sleek and modern, but the retro elements add a touch of nostalgia that I find very appealing. The writing experience on Retrograde Writer is also excellent. The editor is very responsive, and the interface is intuitive and easy to use. I appreciate the distraction-free mode, which allows me to focus solely on my writing without any distractions. Another feature that I love about Retrograde Writer is the ability to customize the look and feel of the editor. I can choose from a variety of color schemes, fonts, and background images to make my writing environment truly my own. Overall, I highly recommend Retrograde Writer to anyone who wants a text editor that combines modern functionality with a retro aesthetic. It's a pleasure to use, and it has helped me to become a more productive and focused writer..</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-5 animate-box img-to-responsive animate-box" data-animate-effect="fadeInLeft">
+						<img src="https://th.bing.com/th/id/R.03250e4937786f19c6c20f355776b4e4?rik=4Sx7E5m9HUfCTQ&pid=ImgRaw&r=0" alt="" width="1000px" height="1000px">
+				</div>
+				<div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
+					<blockquote>
+						<p> &ldquo; Write without distraction, edit with precision - Retrograde writer is the writer's ultimate companion. &rdquo;</p>
+						<p class="author"><cite>&mdash; Jane Smith</cite></p>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- POOJA : Section which describes our team -->
+	<div id="fh5co-blog" class="fh5co-section">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Our Team</h2>
+					<p>"None of us is as smart as all of us"</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/Kriti.jpeg);"></a>
+						<div class="blog-text">
+							<h3><a href="#">Kriti Rai</a></h3>
+							<p>“When I wrote this code, only God and I understood what I did. Now only God knows.”</p>
+						</div> 
+					</div>
+				</div>
+				<!-- “If work isn't fun, you're not playing on the right team.”
+					“There are two ways to write error-free programs; only the third works.”
+				“A son asked his father (a programmer) why the sun rises in the east, and sets in the west. His response? It works, don’t touch!” -->
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/Ribha.jpeg);"></a>
+						<div class="blog-text">
+							<h3><a href="#">Ribha Nishal</a></h3>
+							<p>“Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live.”</p>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/Pooja.jpeg);"></a>
+						<div class="blog-text">
+							<h3><a href="#">Pooja Sharma</a></h3>
+							<p>“If debugging is the process of removing bugs, then programming must be the process of putting them in.”</p>
+						</div> 
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/Apeksha.jpeg);"></a>
+						<div class="blog-text">
+							<h3><a href="#">Apeksha Jain</a></h3>
+							<p>“Engineers like to solve problems. If there are no problems handily available, they will create their own problems.”</p>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/Abhishek.jpeg);"></a>
+						<div class="blog-text">
+							<h3><a href="#">Abhishek Verma</a></h3>
+							<p>"Debugging is like being a detective in a crime movie where you're also the murderer."</p>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/Tejas.jpeg);"></a>
+						<div class="blog-text">
+							<h3><a href="#">Tejas</a></h3>
+							<p>“99 little bugs in the code. 99 little bugs in the code. Take one down, patch it around. 127 little bugs in the code …”</p>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- RIBHA: Footer part and the links required -->
+	<footer id="fh5co-footer" role="contentinfo" class="fh5co-section">
+    <div class="container">
+        <div class="row row-pb-md">
+            <div class="col-md-4 fh5co-widget">
+                <h4>Retrograde Writer</h4>
+                <p>I pride myself on my ability to spell check text and provide accurate suggestions for misspelled words. In addition, I am constantly learning and improving 
+                    my abilities through updates to my training data. Overall, I'm here to help make your writing and communication easier and more effective! </p>
             </div>
-        </form>
-      </div>
-        <div class="signup-form">
-          <div class="title">Signup</div>
-        <form action="#">
-            <div class="input-boxes">
-              <div class="input-box">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Enter your name" required>
-              </div>
-              <div class="input-box">
-                <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Enter your email" required>
-              </div>
-              <div class="input-box">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Enter your password" required>
-              </div>
-              <div class="button input-box">
-                <input type="submit" value="Submit">
-              </div>
-              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+
+            <div class="col-md-2 col-md-push-1 fh5co-widget">
+                <h4>Categories</h4>
+                <ul class="fh5co-footer-links">
+                    <li><a href="#">Contextual spell checkers</a></li>
+                    <li><a href="#">Grammar checkers</a></li>
+                    <li><a href="#">Browser spell checkers</a></li>
+                    <li><a href="#">Technical spell checkers</a></li>
+                <!--	<li><a href="#">e-Commerce</a></li>-->
+                </ul>
             </div>
-      </form>
+
+            <div class="col-md-4 col-md-push-1 fh5co-widget">
+                <h4>Contact Information</h4>
+                <ul class="fh5co-footer-links">
+                    <li>45-B,Dlf <br> Noida, Uttar Pradesh, 201309</li>
+                    <li><a href="tel://1234567920">+ 1234 5566 98</a></li>
+                    <li><a href="helpdesk.check@mail.com">helpdesk.check@mail.com</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row copyright">
+            <div class="col-md-12 text-center">
+                <p>
+                    <small class="block">&copy; All Rights Reserved.</small> 
+                    <small class="block">Designed by <a  target="_blank">TA SNACHERS</a> </small>
+                </p>
+                <p>
+                    <ul class="fh5co-social-icons">
+                        <li><a href="#"><i class="icon-twitter2"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                        <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+                        <li><a href="#"><i class="icon-dribbble2"></i></a></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
     </div>
-    </div>
-    </div>
-  </div>
-</body>
+</footer>
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+	</body>
 </html>
